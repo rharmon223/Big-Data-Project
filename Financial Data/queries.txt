@@ -1,0 +1,14 @@
+select coffee.date as date, coffee.value as coffeeValue, copper.mid as copperValue, CottonETF.close as CottonETFValue, GoldIndex.close as GlodValue,
+NASDAQVIX.settle as NASDAQVIXsettle, NYMEXAMEXNaturalGasIndex.close as GasClose,  NYMEXCrudeOIl.settle as CrudeOIlSettle, SPVIX.close as SPVIXClose,
+SoybeanETF.close as BeanClose, WheatETF.close as WheatClose
+from coffee, copper,CottonETF, GoldIndex, GoldSilverIndex, NASDAQVIX,NYMEXAMEXNaturalGasIndex, NYMEXCrudeOIl, SPVIX, SoybeanETF, WheatETF  where coffee.date>'2014-01-01 00:00:00' and coffee.date<'2014-12-31 00:00:00'
+and coffee.date=copper.date
+and  CottonETF.date=copper.date
+and GoldIndex.date=copper.date
+and GoldSilverIndex.date=copper.date
+and NASDAQVIX.date=copper.date
+and NYMEXAMEXNaturalGasIndex.date=copper.date
+and NYMEXCrudeOIl.date=copper.date
+and SPVIX.date=copper.date
+and SoybeanETF.date=copper.date
+and WheatETF.date=copper.date order by coffee.date asc
