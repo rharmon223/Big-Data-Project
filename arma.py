@@ -52,7 +52,7 @@ for i in range(1,len(headers)):
         fig = plt.figure(figsize=(12,8))
         ax = fig.add_subplot(111)
         ax = arma_mod50.resid.plot(ax=ax)
-        plt.savefig(headers[i]+'.jpg')       
+        #plt.savefig(headers[i]+'.jpg')       
         sm.stats.durbin_watson(arma_mod50.resid.values)
         resid = arma_mod50.resid
         stats.normaltest(resid)
