@@ -1,0 +1,22 @@
+
+A basic description of the idea:
+
+First we use the multivariateRegression.py to train on the historic commodity data and get and record the weights for each commodity.
+
+Secondly, we train an ARMA model for each of the selected commodity and make a prediction for teach of the commodity price and after that use the weight from step 1 to calculate the prediction of the S&P500 Index. 
+
+
+
+To run the code, please follow the steps below:
+
+1. Please run the multivariateRegression.py
+
+
+2. Please record the coef on the printed table as the weight, w_i, for each of the commodity, x_i, and a constant term.
+
+
+3. Please run the ARMA.py to calculate get the predicted value for each of the selected commodity X_i.
+
+
+4. Please use the formula to calculate the prediction value for next day's S&P500: S&P500Index = w_1*X_i + .....+ w_i*x_i + Constant
+
