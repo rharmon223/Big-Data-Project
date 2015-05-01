@@ -4,7 +4,10 @@ import os
 import csv
 import re
 from DB import DB, DB_NAME
-
+'''
+I have made the output into a outputData.csv in the foler: D:/Big-Data-Project/. You need to change the folder
+so that it can run.
+'''
 def main():
     data = []
     db = DB(DB_NAME)
@@ -59,7 +62,7 @@ def main():
     header = ['date', 'coffeevalue', 'coppervalue', 'cottonetfvalue', 'glodvalue', 'nasdaqvixsettle',\
               'gasclose', 'crudeoilsettle', 'spvixclose', 'beanclose', 'wheatclose']
     t = db.query(joinData)
-    with open("D:/Big-Data-Project/testData.csv", "wb") as f:
+    with open("D:/Big-Data-Project/outputData.csv", "wb") as f:
         writer = csv.DictWriter(f, fieldnames =header)
         writer.writeheader()
         writer = csv.writer(f)

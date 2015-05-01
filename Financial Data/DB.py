@@ -3,6 +3,9 @@ import sqlite3
 
 DB_NAME = 'Big Data'
 
+'''
+I am running the codes in my local computer. You need to change the self.conn to make it run.
+'''
 class DB:
         def __init__(self, db_name):
 		try:
