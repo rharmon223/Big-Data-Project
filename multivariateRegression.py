@@ -5,7 +5,6 @@ import pandas as pd
 # import matplotlib.pyplot as plt
 
 import statsmodels.api as sm
-from statsmodels.graphics.api import qqplot
 
 # print (sm.datasets.sunspots.NOTE)
 
@@ -20,4 +19,5 @@ df_adv.head()
 X = sm.add_constant(X)
 est = sm.OLS(y, X).fit()
 
-est.summary()
+print(est.summary())
+
