@@ -1,3 +1,8 @@
+
+************************************************
+** Please test the code directly from main.py **
+************************************************
+
 Please intall the following python packages:
 numpy, scipy, pandas, matplotlib, statsmodels
 
@@ -12,23 +17,4 @@ Secondly, we train an ARMA model for each of the selected commodity and make a p
 
 
 
-To run the code, please follow the steps below:
 
-1. Please run the multivariateRegression.py
-
-
-2. Please record the coef on the printed table as the weight, w_i, for each of the commodity, x_i, and a constant term.
-
-
-3. Please run the ARMA.py to calculate get the predicted value for each of the selected commodity X_i.
-
-
-4. Please use the formula to calculate the prediction value for next day's S&P500: S&P500Index = w_1*X_i + .....+ w_i*x_i + Constant
-
-
-######
-Just in case, if there's problem.
-
-The weights/ coefficient based on the tested data, from the multivariateRegression should be
-
-c = [1.1640, 1.2042, 0.0014, -0.2324, 0.0373, 0.8208, -0.0134, -0.0337, 0.2483, -5.4422]

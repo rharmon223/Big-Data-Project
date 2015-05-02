@@ -8,7 +8,7 @@ import statsmodels.api as sm
 
 # print (sm.datasets.sunspots.NOTE)
 
-df_adv = pd.read_csv('testData.csv', index_col=0)
+df_adv = pd.read_csv('outputData.csv', index_col=1)
 
 X = df_adv[['coffeevalue','coppervalue','cottonetfvalue','glodvalue','nasdaqvixsettle','gasclose','crudeoilsettle','beanclose','wheatclose']]
 y = df_adv['spvixclose']
