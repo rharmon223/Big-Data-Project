@@ -17,4 +17,11 @@ Secondly, we train an ARMA model for each of the selected commodity and make a p
 
 
 
+#################
+##   results   ##
+#################
 
+Predicted results are saved in the following five variables. Each time we are able to predict for the next 5 days. But we usually only take the next day's prediction 
+
+variable names:
+predResult_oneDayLater, predResult_twoDayLater, predResult_threeDayLater, predResult_fourDayLater, predResult_fiveDayLater 
